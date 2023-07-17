@@ -1,0 +1,29 @@
+.room {
+  font-size: 16px;
+  &__main {
+    display: grid;
+    grid-template-columns: 44px repeat(2, minmax(0, 1fr)) 16px;
+    gap: 12px;
+    align-items: center;
+    @include phone {
+        gap: 8px;
+    }
+    &__btn {
+      cursor: pointer;
+    }
+  }
+  &__extra {
+    padding-left: 56px;
+    margin-top: 21px;
+    padding-right: 28px;
+    @include phone {
+        padding: 0 24px 0 52px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+  }
+}

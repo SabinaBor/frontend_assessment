@@ -1,0 +1,43 @@
+.select__btn {
+  &__value {
+    font-size: 14px;
+    font-family: Ubuntu;
+    @include phone {
+      white-space: nowrap
+    }
+    @include smallest-phone {
+      font-size: 10px;
+    }
+    &__text {
+      font-size: 16px;
+      margin-bottom: 3px;
+      @include phone {
+        margin-bottom: 0;
+      }
+      @include smallest-phone {
+        font-size: 12px;
+      }
+      &_hidden {
+        display: none;
+        @include phone {
+          display: inline;
+        }
+        @include small-phone {
+          display: none;
+        }
+      }
+    }
+    span.hidden-mobile {
+      @include phone {
+        display: none;
+      }
+      @include small-phone {
+        display: flex;
+      }
+    }
+  }
+  &__trigger {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

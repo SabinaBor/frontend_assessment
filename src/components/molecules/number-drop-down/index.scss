@@ -1,0 +1,17 @@
+.select {
+  &__btn {
+    padding: 0 6px 0 12px;
+  }
+  &__item {
+    font-size: 16px;
+    padding: 15px 16px;
+    cursor: pointer;
+    &:hover {
+      background: var(--color-hover);
+    }
+    &.disabled {
+      opacity: 0.23;
+      pointer-events: none;
+    }
+  }
+}

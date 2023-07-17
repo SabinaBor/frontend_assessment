@@ -1,0 +1,40 @@
+.calendar__btn {
+  &__content {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    &__left {
+      font-size: 37px;
+      @include small-phone {
+        font-size: 24px;
+      }
+      @include smallest-phone {
+        font-size: 20px;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5px;
+      font-size: 16px;
+      white-space: nowrap;
+      @include smallest-phone {
+        font-size: 12px;
+      }
+      span {
+        &:first-child {
+          font-size: 16px;
+          @include smallest-phone {
+            font-size: 12px;
+          }
+        }
+        &:last-child {
+          font-size: 14px;
+          @include smallest-phone {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

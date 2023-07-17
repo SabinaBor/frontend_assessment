@@ -1,0 +1,50 @@
+.select__btn {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  @include phone {
+    padding: 0 14px 0 20px;
+    gap: 23px;
+  }
+  @include small-phone {
+    gap: 12px;
+  }
+  span {
+    display: flex;
+    &.select__btn__trigger {
+      &.mobile {
+        display: none;
+        @include phone {
+          display: flex;
+        }
+      }
+    }
+  }
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    overflow-x: hidden;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: var(--color-subtitle);
+      font-size: 16px;
+      @include smallest-phone {
+        font-size: 12px;
+      }
+    }
+    @include smallest-phone {
+      font-size: 12px;
+    }
+  }
+}

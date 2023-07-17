@@ -1,0 +1,56 @@
+.search-page {
+  height: 100vh;
+  background: url(@/assets/images/bg-image.webp) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 83px;
+  @include tablet {
+    padding: 0 16px;
+    background: none;
+  }
+  h1 {
+    color: var(--color-title);
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    overflow: visible;
+    margin-bottom: 18px;
+    text-align: center;
+    @include tablet {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 13px;
+    }
+    @include small-tablet {
+      margin-bottom: 12px;
+    }
+    @include phone {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 9px;
+    }
+  }
+  &__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    opacity: 1;
+    margin-bottom: 43px;
+    text-align: center;
+    @include tablet {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 28px;
+    }
+    @include phone {
+      margin-bottom: 14px;
+      width: 80%;
+    }
+  }
+}

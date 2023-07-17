@@ -1,0 +1,59 @@
+@mixin large-desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin container {
+  @media screen and (max-width: $container) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media screen and (max-width: $small-tablet) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media screen and (max-width: $landscape-phone) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin small-phone {
+  @media screen and (max-width: $small-phone) {
+    @content;
+  }
+}
+
+@mixin smallest-phone {
+  @media screen and (max-width: $smallest-phone) {
+    @content;
+  }
+}

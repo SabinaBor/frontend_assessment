@@ -1,0 +1,34 @@
+.select {
+  &__list {
+    padding: 19px 16px;
+    &__header {
+      font-size: 16px;
+      display: grid;
+      grid-template-columns: 44px repeat(2, minmax(0, 1fr)) 16px;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 9px;
+      &::before {
+        width: 44px;
+        grid-column: 1;
+        grid-row: 1;
+        content: "";
+      }
+    }
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    &__footer {
+      white-space: nowrap;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 4px;
+      margin-top: 30px;
+      @include phone {
+        gap: 6px;
+      }
+    }
+  }
+}

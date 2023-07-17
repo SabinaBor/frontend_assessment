@@ -1,0 +1,42 @@
+.calendar__btn {
+  &__header,
+  &__bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr);
+    gap: 25px;
+    align-items: center;
+    @include small-phone {
+      gap: 8px;
+    }
+    @include smallest-phone {
+      gap: 4px;
+    }
+  }
+  &__header {
+    white-space: nowrap;
+    &::after {
+      content: "";
+      grid-column: 2;
+      grid-row: 1;
+      width: 20px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 7.4px;
+      font-size: 12px;
+      font-weight: bold;
+      padding-left: 4.5px;
+      @include smallest-phone {
+        padding: 0;
+      }
+      & > span {
+        display: flex;
+        @include smallest-phone {
+          display: none;
+        }
+      }
+    }
+  }
+}
